@@ -1,0 +1,50 @@
+2024-02-28 19:57:33.202 | INFO     | tests.test_google_map_api:test_create_new_place:23 - 
+=== Method POST ===
+2024-02-28 19:57:33.203 | INFO     | utilities.api:create_new_place:32 - POST URL:  https://rahulshettyacademy.com/maps/api/place/add/json?key=qaclick123
+2024-02-28 19:57:33.203 | INFO     | utilities.http_methods:post:24 - POST request:  https://rahulshettyacademy.com/maps/api/place/add/json?key=qaclick123
+2024-02-28 19:57:33.911 | INFO     | utilities.http_methods:post:26 - <Response [200]>
+2024-02-28 19:57:33.912 | INFO     | utilities.checking:check_status_code:12 - Success!!! Status Code: <200>
+2024-02-28 19:57:33.912 | INFO     | utilities.checking:check_json_key:19 - All keys of fields verified!
+2024-02-28 19:57:33.918 | INFO     | utilities.checking:check_json_value:27 - The value <status>: <OK> is correct
+2024-02-28 19:57:33.918 | INFO     | tests.test_google_map_api:test_create_new_place:30 - 
+=== Method GET after post ===
+2024-02-28 19:57:33.918 | INFO     | utilities.api:get_new_place:43 - GET URL:  https://rahulshettyacademy.com/maps/api/place/get/json?key=qaclick123&place_id=7a6c21639cca8347c9f895b711640d44
+2024-02-28 19:57:33.919 | INFO     | utilities.http_methods:get:16 - GET request:  https://rahulshettyacademy.com/maps/api/place/get/json?key=qaclick123&place_id=7a6c21639cca8347c9f895b711640d44
+2024-02-28 19:57:35.385 | INFO     | utilities.http_methods:get:18 - <Response [200]>
+2024-02-28 19:57:35.385 | INFO     | utilities.checking:check_status_code:12 - Success!!! Status Code: <200>
+2024-02-28 19:57:35.385 | INFO     | utilities.checking:check_json_key:19 - All keys of fields verified!
+2024-02-28 19:57:35.386 | INFO     | utilities.checking:check_json_value:27 - The value <address>: <29, side layout, cohen 09> is correct
+2024-02-28 19:57:35.386 | INFO     | tests.test_google_map_api:test_create_new_place:38 - 
+=== Method PUT ===
+2024-02-28 19:57:35.386 | INFO     | utilities.api:put_new_place:59 - PUT URL:  https://rahulshettyacademy.com/maps/api/place/update/json?key=qaclick123
+2024-02-28 19:57:35.386 | INFO     | utilities.http_methods:put:32 - PUT request:  https://rahulshettyacademy.com/maps/api/place/update/json?key=qaclick123
+2024-02-28 19:57:37.202 | INFO     | utilities.http_methods:put:34 - <Response [200]>
+2024-02-28 19:57:37.202 | INFO     | utilities.checking:check_status_code:12 - Success!!! Status Code: <200>
+2024-02-28 19:57:37.202 | INFO     | utilities.checking:check_json_key:19 - All keys of fields verified!
+2024-02-28 19:57:37.202 | INFO     | utilities.checking:check_json_value:27 - The value <msg>: <Address successfully updated> is correct
+2024-02-28 19:57:37.203 | INFO     | tests.test_google_map_api:test_create_new_place:44 - 
+=== Method GET after put ===
+2024-02-28 19:57:37.203 | INFO     | utilities.api:get_new_place:43 - GET URL:  https://rahulshettyacademy.com/maps/api/place/get/json?key=qaclick123&place_id=7a6c21639cca8347c9f895b711640d44
+2024-02-28 19:57:37.203 | INFO     | utilities.http_methods:get:16 - GET request:  https://rahulshettyacademy.com/maps/api/place/get/json?key=qaclick123&place_id=7a6c21639cca8347c9f895b711640d44
+2024-02-28 19:57:38.778 | INFO     | utilities.http_methods:get:18 - <Response [200]>
+2024-02-28 19:57:38.780 | INFO     | utilities.checking:check_status_code:12 - Success!!! Status Code: <200>
+2024-02-28 19:57:38.780 | INFO     | utilities.checking:check_json_key:19 - All keys of fields verified!
+2024-02-28 19:57:38.780 | INFO     | utilities.checking:check_json_value:27 - The value <address>: <100 Mira street, RU> is correct
+2024-02-28 19:57:38.780 | INFO     | tests.test_google_map_api:test_create_new_place:52 - 
+=== Method DELETE ===
+2024-02-28 19:57:38.780 | INFO     | utilities.api:delete_new_place:73 - DELETE URL:  https://rahulshettyacademy.com/maps/api/place/delete/json?key=qaclick123
+2024-02-28 19:57:38.781 | INFO     | utilities.http_methods:delete:40 - Delete request:  https://rahulshettyacademy.com/maps/api/place/delete/json?key=qaclick123
+2024-02-28 19:57:40.704 | INFO     | utilities.http_methods:delete:42 - <Response [200]>
+2024-02-28 19:57:40.705 | INFO     | utilities.checking:check_status_code:12 - Success!!! Status Code: <200>
+2024-02-28 19:57:40.705 | INFO     | utilities.checking:check_json_key:19 - All keys of fields verified!
+2024-02-28 19:57:40.705 | INFO     | utilities.checking:check_json_value:27 - The value <status>: <OK> is correct
+2024-02-28 19:57:40.705 | INFO     | tests.test_google_map_api:test_create_new_place:58 - 
+=== Method GET after delete ===
+2024-02-28 19:57:40.705 | INFO     | utilities.api:get_new_place:43 - GET URL:  https://rahulshettyacademy.com/maps/api/place/get/json?key=qaclick123&place_id=7a6c21639cca8347c9f895b711640d44
+2024-02-28 19:57:40.705 | INFO     | utilities.http_methods:get:16 - GET request:  https://rahulshettyacademy.com/maps/api/place/get/json?key=qaclick123&place_id=7a6c21639cca8347c9f895b711640d44
+2024-02-28 19:57:42.756 | INFO     | utilities.http_methods:get:18 - <Response [404]>
+2024-02-28 19:57:42.758 | INFO     | utilities.checking:check_status_code:12 - Success!!! Status Code: <404>
+2024-02-28 19:57:42.758 | INFO     | utilities.checking:check_json_key:19 - All keys of fields verified!
+2024-02-28 19:57:42.758 | INFO     | utilities.checking:check_json_value:27 - The value <msg>: <Get operation failed, looks like place_id  doesn't exists> is correct
+2024-02-28 19:57:42.758 | INFO     | utilities.checking:check_json_search_word_in_value:34 - Word: <failed> found in field of response <msg>
+2024-02-28 19:57:42.759 | INFO     | tests.test_google_map_api:test_create_new_place:65 - Testing of methods for creating, updating and deleting objects using API Google Maps has been successfully completed
